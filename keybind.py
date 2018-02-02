@@ -18,11 +18,6 @@ while True:
         if keyboard.is_pressed('q'):
             print('Q Pressed. Exiting\n')
             break
-        if keyboard.is_pressed('b'):
-            if keyboard.is_pressed('a'):
-                if keyboard.is_pressed('e'):
-                    ser.write('5')
-                    print('pallu is my bae\n')
         else:
             if i > 4:
                 ser.write('0')

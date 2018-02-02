@@ -28,19 +28,6 @@ void loop()
       case 52 :      Serial.println("Down");
                      analogWrite(11,200);
                      break;
-
-      case 53 :      Serial.println("Bae");
-                     analogWrite(9,200);
-                     analogWrite(10,200);
-                     analogWrite(11,200);
-                     analogWrite(6,200);
-                     delay(100);
-                     analogWrite(9,0);
-                     analogWrite(10,0);
-                     analogWrite(11,0);
-                     analogWrite(6,0);
-                     break;
-
       case 48 :      analogWrite(9,0);
                      analogWrite(10,0);
                      analogWrite(11,0);
