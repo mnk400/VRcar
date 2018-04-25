@@ -3,10 +3,10 @@ void setup()
 
 {
   Serial.begin(115200);
-  pinMode( 0, INPUT);
+  pinMode( 12, OUTPUT);
+  pinMode( 13, OUTPUT);
 }
 void loop()
-
 {
   if(Serial.available()>=0)
   {
@@ -14,24 +14,14 @@ void loop()
     switch(INbyte)
     {
       case 49 :      Serial.println("Left");
-                     analogWrite(9,200);
+                     digitalWrite(12,HIGH);
                      break;
 
       case 50 :      Serial.println("Right");
-                     analogWrite(6,200);
+                     digitalWrite(13,HIGH);
                      break;
-
-      case 51 :      Serial.println("Up");
-                     analogWrite(10,200);
-                     break;
-
-      case 52 :      Serial.println("Down");
-                     analogWrite(11,200);
-                     break;
-      case 48 :      analogWrite(9,0);
-                     analogWrite(10,0);
-                     analogWrite(11,0);
-                     analogWrite(6,0);
+      default :      digitalWrite(12,LOW);
+                     digitalWrite(13,LOW);
                      break;
     }
   }
