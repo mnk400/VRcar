@@ -1,6 +1,6 @@
 import keyboard
 import serial
-ser = serial.Serial('/dev/cu.Bluetooth-Incoming-Port', 115200)
+ser = serial.Serial('/dev/cu.usbmodem1441', 115200)
 i = 0
 while True:
         if keyboard.is_pressed('up'):
