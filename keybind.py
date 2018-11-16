@@ -1,7 +1,7 @@
 from pynput import keyboard as key
 import serial
 
-ser = serial.Serial('/dev/cu.usbmodem14101', 115200)
+ser = serial.Serial('/dev/cu.usbmodem14401', 115200)
 flagup=flagl=flagr=flagd=0
 def on_key_release(key):
     global flagup, flagl, flagr, flagd
