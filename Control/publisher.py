@@ -44,12 +44,12 @@ def on_key_press(key):
     if str(key) == "Key.left":
         if flagl<1:
             print("left")
-            mqtt.publish("DriveChannel",2)
+            mqtt.publish("DriveChannel",3)
             flagl=flagl+1
     if str(key) == "Key.right":
         if flagr<1:
             print("right")
-            mqtt.publish("DriveChannel",3)
+            mqtt.publish("DriveChannel",2)
             flagr=flagr+1
     if str(key) == "Key.down":
         if flagd<1:
